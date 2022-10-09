@@ -13,12 +13,12 @@ body {
   padding: 10px;
   background-color: #363940;
 
-  font-size: 17px;
+  font-size: 16px;
 }
 
 
 .editor {
-  padding-inline: 10px;
+  padding-inline: 10%;
 }
 
 .editor > .toolbar {
@@ -27,16 +27,44 @@ body {
 
   border-radius: 5px;
 }
-.editor textarea {
+.editor > textarea {
   margin-top: 10px;
+  padding: .5em;
   width: 100%;
   background-color: #303136;
 
   border: solid 1px #222327;
+  border-radius: 4px;
 
   font-family: monospace;
-  line-height: 1.3;
-  color: white;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  color: hsl(216, 3.7%, 73.5%);
 
   resize: none;
+}
+
+textarea > span.gray { /* 30 */
+  color: #4f545c;
+}
+textarea > span.gray { /* 30 */
+  color: #4f545c;
+}
+textarea > span.gray { /* 30 */
+  color: #4f545c;
+}
+textarea > span.gray { /* 30 */
+  color: #4f545c;
+}
+textarea > span.gray {
+  color: #4f545c;
+}
+textarea > span.gray {
+  color: #4f545c;
+}
+textarea > span.gray {
+  color: #4f545c;
+}
+textarea > span.gray {
+  color: #4f545c;
 }
