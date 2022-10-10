@@ -27,7 +27,7 @@ body {
 
   border-radius: 5px;
 }
-.editor > textarea {
+.editor > .text {
   margin-top: 10px;
   padding: .5em;
   width: 100%;
@@ -43,28 +43,51 @@ body {
 
   resize: none;
 }
-
-textarea > span.gray { /* 30 */
+.text > span.c0 { /* 30 */
   color: #4f545c;
 }
-textarea > span.gray { /* 30 */
-  color: #4f545c;
+.text > span.c1 { /* 31 */
+  color: red;
 }
-textarea > span.gray { /* 30 */
-  color: #4f545c;
+.text > span.c2 { /* 32 */
+  color: #5f0;
 }
-textarea > span.gray { /* 30 */
-  color: #4f545c;
+.text > span.c3 { /* 33 */
+  color: yellow;
 }
-textarea > span.gray {
-  color: #4f545c;
+.text > span.c4 { /* 34 */
+  color: aqua;
 }
-textarea > span.gray {
-  color: #4f545c;
+.text > span.c5 { /* 35 */
+  color: pink;
 }
-textarea > span.gray {
-  color: #4f545c;
+.text > span.c6 { /* 36 */
+  color: #0f5;
 }
-textarea > span.gray {
-  color: #4f545c;
+.text > span.c7 { /* 37 */
+  color: #fff;
+}
+.text > span.b0 { /* 40 */
+  background-color: #052B39;
+}
+.text > span.b1 { /* 41 */
+  background-color: #CA4B16;
+}
+.text > span.b2 { /* 42 */
+  background-color: #5B6D75;
+}
+.text > span.b3 { /* 43 */
+  background-color: #647D81;
+}
+.text > span.b4 { /* 44 */
+  background-color: #809496;
+}
+.text > span.b5 { /* 45 */
+  background-color: #6C73C3;
+}
+.text > span.b6 { /* 46 */
+  background-color: #96A0A1;
+}
+.text > span.b7 { /* 47 */
+  background-color: #FEF5E2;
 }
