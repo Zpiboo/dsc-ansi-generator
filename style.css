@@ -22,11 +22,25 @@ body {
 }
 
 .editor > .toolbar {
-  height: 2em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
+  height: 3rem;
   background-color: #32353B;
 
   border-radius: 5px;
 }
+.toolbar > * {
+  height: 80%;
+  aspect-ratio: 1;
+  background: black;
+  border-radius: 5px;
+}
+.toolbar > .toggle.selected {
+  background: red;
+}
+
 .editor > .text {
   margin-top: 10px;
   padding: .5em;
@@ -90,4 +104,10 @@ body {
 }
 .text > span.b7 { /* 47 */
   background-color: #FEF5E2;
+}
+.text > span.f1 {
+  text-decoration: underline;
+}
+.text > span.f4 {
+  font-weight: bold;
 }
