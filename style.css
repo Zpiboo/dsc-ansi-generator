@@ -22,23 +22,38 @@ body {
 }
 
 .editor > .toolbar {
+  margin-inline: auto;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   
+  max-width: 400px;
   height: 3rem;
   background-color: #32353B;
 
-  border-radius: 5px;
+  color: white;
+  font-size: 2em;
+
+  border-radius: 4px;
+  border: solid 1px #222327;
 }
 .toolbar > * {
+  display: grid;
+  place-items: center;
+
   height: 80%;
   aspect-ratio: 1;
-  background: black;
-  border-radius: 5px;
+  background: #0001;
+
+  border-radius: 4px;
+
+  cursor: pointer;
 }
-.toolbar > .toggle.selected {
-  background: red;
+.toolbar > * > i {
+  pointer-events: none;
+}
+.toolbar > .format.selected {
+  background: #0008;
 }
 
 .editor > .text {
@@ -61,49 +76,49 @@ body {
   color: #4f545c;
 }
 .text > span.c1 { /* 31 */
-  color: red;
+  color: #dc322f;
 }
 .text > span.c2 { /* 32 */
-  color: #5f0;
+  color: #859900;
 }
 .text > span.c3 { /* 33 */
-  color: yellow;
+  color: #b58900;
 }
 .text > span.c4 { /* 34 */
-  color: aqua;
+  color: #268bd2;
 }
 .text > span.c5 { /* 35 */
-  color: pink;
+  color: #d33682;
 }
 .text > span.c6 { /* 36 */
-  color: #0f5;
+  color: #2aa198;
 }
 .text > span.c7 { /* 37 */
   color: #fff;
 }
 .text > span.b0 { /* 40 */
-  background-color: #052B39;
+  background-color: #052b39;
 }
 .text > span.b1 { /* 41 */
-  background-color: #CA4B16;
+  background-color: #ca4b16;
 }
 .text > span.b2 { /* 42 */
-  background-color: #5B6D75;
+  background-color: #5b6d75;
 }
 .text > span.b3 { /* 43 */
-  background-color: #647D81;
+  background-color: #647d81;
 }
 .text > span.b4 { /* 44 */
   background-color: #809496;
 }
 .text > span.b5 { /* 45 */
-  background-color: #6C73C3;
+  background-color: #6c73c3;
 }
 .text > span.b6 { /* 46 */
-  background-color: #96A0A1;
+  background-color: #96a0a1;
 }
 .text > span.b7 { /* 47 */
-  background-color: #FEF5E2;
+  background-color: #fdf6e3;
 }
 .text > span.f1 {
   text-decoration: underline;
