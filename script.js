@@ -5,6 +5,7 @@ const formatButtons = document.querySelectorAll(".toolbar > .format");
 formatButtons.forEach(btn => {
   btn.addEventListener("click", e => {
     e.target.classList.toggle("selected");
+    execCommand("bold",false,null)
   });
 });
 
