@@ -7,3 +7,8 @@ formatButtons.forEach(btn => {
     e.target.classList.toggle("selected");
   });
 });
+
+
+function modifyText() {
+  // TODO: Finish that lol
+}
