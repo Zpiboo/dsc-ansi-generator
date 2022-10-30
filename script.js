@@ -18,11 +18,13 @@ function modifyText() {
 
 
 function preventParagraphInsert(e) {
-  console.log(`Actual event: ${e}`);
+  console.log("Actual event:");
+  console.log(e);
   if (e.inputType === "insertParagraph") {
     e.preventDefault();
     let newEvt = new InputEvent("beforeinput", { inputType: "insertLineBreak", target: this, bubbles: true });
-    console.log(`My event: ${newEvt}`);
+    console.log("My event:");
+    console.log(newEvt);
     this.dispatchEvent(newEvt);
   }
 }
