@@ -22,7 +22,7 @@ function preventParagraphInsert(e) {
   console.log(e);
   if (e.inputType === "insertParagraph") {
     e.preventDefault();
-    let newEvt = new InputEvent("beforeinput", { inputType: "insertLineBreak", target: this, bubbles: true });
+    let newEvt = new InputEvent("beforeinput", { inputType: "insertLineBreak", bubbles: true });
     console.log("My event:");
     console.log(newEvt);
     this.dispatchEvent(newEvt);
