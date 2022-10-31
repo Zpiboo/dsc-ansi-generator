@@ -1,7 +1,7 @@
 let prefix = (...args) => `\u001b[${args.join(";")}m`
 
 const textArea = document.querySelector("div.text");
-textArea.addEventListener("input", preventParagraphInsert);
+textArea.addEventListener("beforeinput", preventParagraphInsert);
 
 const formatButtons = document.querySelectorAll(".toolbar > .format");
 formatButtons.forEach(btn => {
@@ -18,5 +18,20 @@ function modifyText() {
 
 
 function preventParagraphInsert(e) {
-  // aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+  if (e.inputType === "insertParagraph") {
+    e.preventDefault();
+    insertNodeAtCursor(document.createElement("br"));
+  }
+}
+
+function insertNodeAtCursor(node) {
+  let selection, range;
+  if (window.getSelection) {
+    selection = window.getSelection();
+    range = selection.getRangeAt(0);
+    
+    range.deleteContents();
+    range.insertNode(node);
+    selection.collapseToEnd();
+  }
 }
